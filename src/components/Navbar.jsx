@@ -22,15 +22,15 @@ export default function Navbar({ dark, onToggle }) {
     <header className="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
       <div
         className={`max-w-4xl mx-auto rounded-2xl border transition-all duration-300 ${scrolled
-            ? 'bg-white/55 dark:bg-black/45 backdrop-blur-xl border-white/50 dark:border-white/10 shadow-[0_4px_24px_rgba(0,0,0,0.06)] dark:shadow-[0_4px_24px_rgba(0,0,0,0.3)]'
-            : 'bg-white/25 dark:bg-black/15 backdrop-blur-md border-white/40 dark:border-white/10'
+            ? 'bg-[#fbf3ee]/55 dark:bg-black/45 backdrop-blur-xl border-white/50 dark:border-white/10 shadow-[0_4px_24px_rgba(0,0,0,0.06)] dark:shadow-[0_4px_24px_rgba(0,0,0,0.3)]'
+            : 'bg-[#fbf3ee]/25 dark:bg-black/15 backdrop-blur-md border-white/40 dark:border-white/10'
           }`}
       >
         <div className="px-5 h-14 flex items-center justify-between">
           <a
             href="#"
             style={{ fontFamily: "'Playwrite US Trad', cursive" }}
-            className="text-[18px] italic text-[#111111] dark:text-white"
+            className="text-[18px] italic text-[#344960] dark:text-white"
           >
             ic
           </a>
@@ -40,7 +40,7 @@ export default function Navbar({ dark, onToggle }) {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-[14px] text-[#6b7280] dark:text-[#9ca3af] hover:text-[#111111] dark:hover:text-white transition-colors"
+                className="text-[14px] text-[#8c7b6e] dark:text-[#a89587] hover:text-[#344960] dark:hover:text-white transition-colors"
               >
                 {l.label}
               </a>
@@ -51,13 +51,13 @@ export default function Navbar({ dark, onToggle }) {
             <button
               onClick={onToggle}
               aria-label="Toggle dark mode"
-              className="p-2 rounded-lg text-[#6b7280] dark:text-[#9ca3af] hover:text-[#111111] dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+              className="p-2 rounded-lg text-[#8c7b6e] dark:text-[#a89587] hover:text-[#344960] dark:hover:text-white hover:bg-black/5 dark:hover:bg-[#fbf3ee]/10 transition-colors"
             >
               {dark ? <Sun size={17} /> : <Moon size={17} />}
             </button>
             <a
               href="#contact"
-              className="inline-flex items-center px-4 py-2 rounded-lg bg-[#2563eb] text-white text-[14px] font-medium hover:bg-[#1d4ed8] transition-colors"
+              className="inline-flex items-center px-4 py-2 rounded-lg bg-[#c45820] text-white text-[14px] font-medium hover:bg-[#a84818] transition-colors"
             >
               Get in touch
             </a>
@@ -67,12 +67,12 @@ export default function Navbar({ dark, onToggle }) {
             <button
               onClick={onToggle}
               aria-label="Toggle dark mode"
-              className="p-2 text-[#6b7280] dark:text-[#9ca3af]"
+              className="p-2 text-[#8c7b6e] dark:text-[#a89587]"
             >
               {dark ? <Sun size={17} /> : <Moon size={17} />}
             </button>
             <button
-              className="p-2 text-[#6b7280] dark:text-[#9ca3af]"
+              className="p-2 text-[#8c7b6e] dark:text-[#a89587]"
               onClick={() => setOpen(!open)}
               aria-label="Toggle menu"
             >
@@ -90,7 +90,7 @@ export default function Navbar({ dark, onToggle }) {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-[15px] text-[#6b7280] dark:text-[#9ca3af] hover:text-[#111111] dark:hover:text-white transition-colors"
+                className="text-[15px] text-[#8c7b6e] dark:text-[#a89587] hover:text-[#344960] dark:hover:text-white transition-colors"
               >
                 {l.label}
               </a>
@@ -98,7 +98,7 @@ export default function Navbar({ dark, onToggle }) {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-[#2563eb] text-white text-[14px] font-medium"
+              className="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-[#c45820] text-white text-[14px] font-medium"
             >
               Get in touch
             </a>

@@ -84,40 +84,40 @@ const education = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 md:py-32 border-t border-[#e5e7eb] dark:border-[#27272a]">
+    <section id="experience" className="py-24 md:py-32 border-t border-[#e6d8cf] dark:border-[#3a2010]">
       <div className="max-w-5xl mx-auto px-6">
         <div className="mb-14">
-          <p className="text-[13px] font-semibold text-[#2563eb] uppercase tracking-widest mb-3">
+          <p className="text-[13px] font-semibold text-[#c45820] uppercase tracking-widest mb-3">
             Career
           </p>
-          <h2 className="text-3xl md:text-[40px] font-bold tracking-tight text-[#111111] dark:text-white leading-tight">
+          <h2 className="text-3xl md:text-[40px] font-bold tracking-tight text-[#344960] dark:text-white leading-tight">
             Experience
           </h2>
         </div>
 
         <div className="relative mb-20">
-          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-[#e5e7eb] dark:bg-[#27272a] hidden md:block" />
+          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-[#e6d8cf] dark:bg-[#3a2010] hidden md:block" />
 
           <div className="flex flex-col gap-10">
             {experiences.map((exp, i) => (
               <div key={i} className="md:pl-10 relative">
-                <div className="hidden md:block absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full border-2 border-[#2563eb] bg-white dark:bg-[#0f0f0f]" />
+                <div className="hidden md:block absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full border-2 border-[#c45820] bg-[#fbf3ee] dark:bg-[#150d07]" />
 
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
                   <div>
-                    <h3 className="text-[17px] font-semibold text-[#111111] dark:text-white">{exp.role}</h3>
-                    <p className="text-[14px] text-[#6b7280] dark:text-[#9ca3af] mt-0.5">{exp.company}</p>
-                    <p className="text-[13px] text-[#9ca3af] dark:text-[#6b7280] mt-0.5">{exp.location}</p>
+                    <h3 className="text-[17px] font-semibold text-[#344960] dark:text-white">{exp.role}</h3>
+                    <p className="text-[14px] text-[#8c7b6e] dark:text-[#a89587] mt-0.5">{exp.company}</p>
+                    <p className="text-[13px] text-[#a89587] dark:text-[#8c7b6e] mt-0.5">{exp.location}</p>
                   </div>
                   <div className="flex flex-wrap gap-2 sm:shrink-0 sm:items-center">
-                    <span className="text-[13px] text-[#9ca3af] dark:text-[#6b7280] whitespace-nowrap">{exp.period}</span>
+                    <span className="text-[13px] text-[#a89587] dark:text-[#8c7b6e] whitespace-nowrap">{exp.period}</span>
                     {exp.tags.map((t) => (
                       <span
                         key={t}
                         className={`px-2.5 py-0.5 rounded-full text-[12px] font-medium ${
                           t === 'Current'
                             ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400'
-                            : 'bg-[#eff6ff] dark:bg-[#1e2d47] text-[#2563eb] dark:text-[#60a5fa]'
+                            : 'bg-[#fef1e8] dark:bg-[#3d1e08] text-[#c45820] dark:text-[#e8956a]'
                         }`}
                       >
                         {t}
@@ -125,7 +125,7 @@ export default function Experience() {
                     ))}
                   </div>
                 </div>
-                <p className="text-[15px] text-[#6b7280] dark:text-[#9ca3af] leading-relaxed max-w-2xl mt-3">
+                <p className="text-[15px] text-[#8c7b6e] dark:text-[#a89587] leading-relaxed max-w-2xl mt-3">
                   {exp.description}
                 </p>
               </div>
@@ -134,20 +134,20 @@ export default function Experience() {
         </div>
 
         <div>
-          <p className="text-[13px] font-semibold text-[#2563eb] uppercase tracking-widest mb-8">
+          <p className="text-[13px] font-semibold text-[#c45820] uppercase tracking-widest mb-8">
             Education
           </p>
           <div className="flex flex-col gap-5">
             {education.map((e, i) => (
               <div
                 key={i}
-                className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 px-6 py-5 rounded-2xl border border-[#e5e7eb] dark:border-[#27272a] bg-[#fafafa] dark:bg-[#1a1a1a]"
+                className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 px-6 py-5 rounded-2xl border border-[#e6d8cf] dark:border-[#3a2010] bg-[#f5ece5] dark:bg-[#241509]"
               >
                 <div>
-                  <p className="text-[15px] font-semibold text-[#111111] dark:text-white">{e.degree}</p>
-                  <p className="text-[14px] text-[#6b7280] dark:text-[#9ca3af] mt-0.5">{e.school}</p>
+                  <p className="text-[15px] font-semibold text-[#344960] dark:text-white">{e.degree}</p>
+                  <p className="text-[14px] text-[#8c7b6e] dark:text-[#a89587] mt-0.5">{e.school}</p>
                 </div>
-                <span className="text-[13px] text-[#9ca3af] dark:text-[#6b7280] shrink-0">{e.period}</span>
+                <span className="text-[13px] text-[#a89587] dark:text-[#8c7b6e] shrink-0">{e.period}</span>
               </div>
             ))}
           </div>
