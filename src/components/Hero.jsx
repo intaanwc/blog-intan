@@ -19,7 +19,7 @@ export default function Hero() {
             </div>
 
             <h1 className="text-4xl md:text-[52px] font-bold leading-[1.1] tracking-tight text-[#344960] dark:text-white mb-3">
-              Intan Cahyani
+              Intan Wahyu Cahyani
             </h1>
 
             <p className="text-[15px] text-[#c45820] font-semibold mb-5">
